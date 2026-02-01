@@ -85,11 +85,11 @@
   <h1>Oi, meu amor ❤️☺️</h1>
   <p>
     Eu fiz isso pensando em você.<br>
-    Em tudo que a gente viveu (até agora),<br>
+    Em tudo que a gente viveu(até agora),<br>
     em cada música,<br>
-    em cada sentimento. Esse é só o começo! ☺️🥰
+    em cada sentimento. E sei que ainda tem muita coisa pra gente viver juntas. Esse é só o começo!☺️🥰
   </p>
-  <button onclick="mostrar('tela2')">Entrar</button>
+  <button onclick="mostrar('tela2')" aria-label="Entrar no site">Entrar</button>
 </div>
 
 <!-- TELA 2 -->
@@ -97,10 +97,33 @@
   <h2>Sobre você ☺️🫶🏾</h2>
   <p>
     Ter você na minha vida foi uma das melhores coisas que aconteceram comigo.<br><br>
+
     Você é quem me faz rir sempre, e te amar era o que eu precisava e não sabia.<br><br>
-    Quero conseguir te provar todos os dias o meu amor por você.<br><br>
-    Te amo muito 💕
+
+    Quero conseguir te provar todos os dias o meu amor por você.<br>
+    Sei que não tenho força e não sei lutar como o Edward, mas te prometo fazer o possível
+    e o impossível pra te amar e te proteger mais do que ele fez com a Bella.<br><br>
+
+    Sei que não canto tão bem quanto a Billie, mas sempre que você pedir pra cantar,
+    vou dar o meu melhor por você, mesmo que eu erre e desafine um pouco kkk.<br><br>
+
+    Você é tudo de melhor que tem nesse mundo.
+    Meu objetivo é sempre tentar o melhor e ser a melhor pra você.<br><br>
+
+    Te amo, meu amor! Minha princesa! Minha vida! Meu bebê! 💕<br><br>
+
+    Feliz aniversário, minha princesa! 🎂💖<br>
+    Que Deus te abençoe muito, te dê muita saúde
+    (só não peço pra dar paz pra eu não sumir kkkkk).<br><br>
+
+    Eu torço muito por você e sempre vou torcer pela sua felicidade.
+    Você merece o mundo.<br><br>
+
+    Te amo muito 💕<br><br>
+
+    <strong>PS:</strong> Espero que tenha gostado da surpresa ☺️
   </p>
+
   <button onclick="mostrar('tela3')">Músicas 🎵</button>
 </div>
 
@@ -124,7 +147,10 @@
 <!-- TELA 4 -->
 <div class="tela" id="tela4">
   <h2>Toquei pensando em você 🫶🏾💕</h2>
-  <p>Esses áudios são meus,<br>mas sempre foram seus.</p>
+  <p>
+    Esses áudios são meus,<br>
+    mas sempre foram seus.
+  </p>
 
   <audio controls preload="metadata" playsinline>
     <source src="audio1.mp3" type="audio/mpeg">
@@ -157,6 +183,10 @@
 <div class="tela" id="tela5">
   <h2>Pra você 😘</h2>
   <p>
+    Assim como a sua cantora favorita,<br>
+    você carrega suas cores<br>
+    e deixa tudo mais intenso.<br><br>
+
     Isso aqui é só um detalhe<br>
     perto do que eu sinto por você.
   </p>
@@ -164,8 +194,10 @@
 
 <script>
   function mostrar(id) {
-    document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
-    document.getElementById(id).classList.add('ativa');
+    document.querySelectorAll('.tela')
+      .forEach(t => t.classList.remove('ativa'));
+    document.getElementById(id)
+      .classList.add('ativa');
     window.scrollTo(0, 0);
   }
 </script>
